@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoría de Free Credits - Ranuk IT Solutions</title>
+    <style>
+        :root {
+            --bg: #1a1a2e;
+            --fg: #00d4ff;
+            --accent: #ffd700;
+            --card: #16213e;
+        }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background: var(--bg); 
+            color: var(--fg); 
+            margin: 0; 
+            padding: 0;
+        }
+        .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+        h1 { font-size: 2.2rem; color: var(--fg); margin-bottom: 1rem; }
+        .hero { 
+            background: linear-gradient(135deg, var(--card), #0f0f23); 
+            border-radius: 12px; 
+            padding: 2.5rem; 
+            margin-bottom: 2rem;
+            border: 1px solid var(--fg);
+        }
+        .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .hero p { color: #a0a0a0; font-size: 1.1rem; }
+        .pricing { 
+            background: var(--card); 
+            border-radius: 12px; 
+            padding: 2rem; 
+            margin: 1.5rem 0;
+            border: 1px solid #333;
+        }
+        .pricing h3 { margin-top: 0; }
+        .price { font-size: 2.5rem; color: var(--accent); font-weight: bold; margin: 0.5rem 0; }
+        .price-span { color: #666; font-size: 0.9rem; }
+        .table { width: 100%; border-collapse: collapse; }
+        .table th, .table td { padding: 1rem; border: 1px solid #333; text-align: left; }
+        .table th { background: #16213e; }
+        .form-group { margin: 1rem 0; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: #a0a0a0; }
+        .form-group input, .form-group select { width: 100%; padding: 0.8rem; background: #0f0f23; border: 1px solid #333; color: #fff; }
+        .btn { 
+            display: inline-block; 
+            padding: 1rem 1.5rem; 
+            background: var(--accent); 
+            color: #1a1a2e; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .testimonial { 
+            background: var(--card); 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--fg);
+        }
+        .footer { 
+            text-align: center; 
+            padding: 2rem; 
+            color: #666; 
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h2>Audita tus free credits en 24h</h2>
+            <p>Optimizamos tu uso de APIs gratuitas y detectamos oportunidades de mejora</p>
+        </header>
+
+        <section class="pricing">
+            <h3>Planes de Auditoría</h3>
+            <div class="table">
+                <div>
+                    <h4>Básica $99</h4>
+                    <span class="price-span">1-5 APIs auditadas</span>
+                    <div class="price">$99</div>
+                    <ul>
+                        <li>Análisis de límites y uso</li>
+                        <li>Reporte de optimización</li>
+                        <li>Email de recomendaciones</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Pro $299</h4>
+                    <span class="price-span">5-20 APIs auditadas</span>
+                    <div class="price">$299</div>
+                    <ul>
+                        <li>Análisis completo de todas tus APIs</li>
+                        <li>Reporte detallado con gráficos</li>
+                        <li>Email de recomendaciones priorizadas</li>
+                        <li>Seguimiento 15 días</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <strong>Cliente Z - W Empresa:</strong> <br>
+            "El servicio nos ayudó a reducir costos en un 40% en nuestras APIs gratuitas. Recomendado."
+        </section>
+
+        <form action="#" method="POST" class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" required placeholder="Tu nombre">
+            <label>Email</label>
+            <input type="email" required placeholder="tu@email.com">
+            <label>APIs a auditar (separadas por coma)</label>
+            <input type="text" placeholder="ej: openai, anthropic, groq">
+            <a href="#" class="btn">Solicitar Auditoría</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        Ranuk IT Solutions | ranuk.dev | ranukorbit.com
+    </footer>
+</body>
+</html>
